@@ -27,33 +27,3 @@ class Solution {
         
     }
 }
-
-// class Solution {
-//     public long largestSquareArea(int[][] bottomLeft, int[][] topRight) {
-//         long bigSide = 0;
-//         int n = bottomLeft.length;
-//         for(int i=0;i<n-1;i++){
-//             int[] rectBL = bottomLeft[i];
-//             int[] rectTR = topRight[i];
-//             for(int j=i+1;j<n;j++){
-//                 int[] rectBL2 = bottomLeft[j];
-//                 int[] rectTR2 = topRight[j];
-//                 if(rectBL[0]>=rectTR2[0] || rectBL2[0]>=rectTR[0]){
-//                     continue;
-//                 }
-//                 if(rectBL[1]>=rectTR2[1] || rectBL2[1]>=rectTR[1]){
-//                     continue;
-//                 }
-//                 int ptAx = Math.max(rectBL[0],rectBL2[0]);
-//                 int ptAy = Math.max(rectBL[1],rectBL2[1]);
-//                 int ptBx = Math.min(rectTR[0],rectTR2[0]);
-//                 int ptBy = Math.min(rectTR[1],rectTR2[1]);
-//                 int side1 = ptBx - ptAx;
-//                 int side2 = ptBy - ptAy;
-//                 bigSide = Math.max(bigSide, Math.min(side1,side2));
-                
-//             }
-//         }
-//         return bigSide*bigSide;
-//     }
-// }
